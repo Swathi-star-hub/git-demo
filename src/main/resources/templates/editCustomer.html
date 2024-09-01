@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>edit Customer</title>
+</head>
+<body>
+
+
+<form action="#" th:action="@{/save}" th:object="${xl}"
+      method="post" enctype="multipart/form-data">
+
+    <table border="1">
+
+        <tr>
+            <td>Customer SNO: </td>
+            <td><input type="text" th:field="*{sNO}" readonly="readonly"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Customer Id: </td>
+            <td><input type="text" th:field="*{id}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td> Customer Name: </td>
+            <td><input type="text" th:field="*{customerName}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Qualification: </td>
+            <td><input type="text" th:field="*{qualification}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Gender: </td>
+            <td><input type="text" th:field="*{gender}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>DateOfBirth: </td>
+            <td><input type="text" th:field="*{dateOfBirth}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>addressLine1: </td>
+            <td><input type="text" th:field="*{addressLine1}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>addressLine2: </td>
+            <td><input type="text" th:field="*{addressLine2}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>city: </td>
+            <td><input type="text" th:field="*{city}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>state: </td>
+            <td><input type="text" th:field="*{state}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>pincode: </td>
+            <td><input type="text" th:field="*{pincode}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>maritalStatus: </td>
+            <td><input type="text" th:field="*{maritalStatus}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td><button type="submit" class="btn btn-info col-2" >Update Product</button>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+
+
+</body>
+</html>
