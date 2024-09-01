@@ -193,9 +193,7 @@ public class ExcelController {
         m.addAttribute("itemsPerPage",list.getNumberOfElements());
         m.addAttribute("pageNo",list.getNumber());
         m.addAttribute("count",list.getSize());
-        //m.addAttribute("count",list.getPageable().getPageSize());
-        //double items = Math.ceil(list.getTotalElements()/list.getSize());
-        //m.addAttribute(items);
+
         return "index";
     }
 }
