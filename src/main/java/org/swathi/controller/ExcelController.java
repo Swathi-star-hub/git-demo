@@ -95,7 +95,6 @@ public class ExcelController {
                 ExcelSheet xl = new ExcelSheet();
                 while (cells.hasNext()){
                     Cell cell = cells.next();
-                    // CellType cellType = cell.getCellType();
                     switch (cid){
                         case 0:
                             xl.setId((int)cell.getNumericCellValue());
